@@ -11,6 +11,7 @@
     ./chromium.nix                    # chrome browser
     ./copilot.nix                     # copilot-cli
     ./discord.nix                     # discord
+    ./docker.nix                      # docker
     ./fastfetch/fastfetch.nix         # fetch tool
     ./firefox.nix                     # firefox developer edition
     ./fzf.nix                         # fuzzy finder
@@ -39,6 +40,7 @@
     ./swaylock.nix                    # lock screen
     ./swayosd.nix                     # brightness / volume wiget
     ./swaync/swaync.nix               # notification deamon
+    ./thunderbird.nix                 # email client
     ./vscodium                        # vscode fork
     ./waybar                          # status bar
     ./waypaper.nix                    # GUI wallpaper picker
