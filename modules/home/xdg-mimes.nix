@@ -2,6 +2,7 @@
 with lib;
 let
   defaultApps = {
+    browser = [ "chromium-browser.desktop" ];
     text = [ "org.gnome.TextEditor.desktop" ];
     image = [ "imv-dir.desktop" ];
     audio = [ "mpv.desktop" ];
@@ -66,6 +67,13 @@ let
       "application/rar"
       "application/7z"
       "application/*tar"
+    ];
+    browser = [
+      "text/html"
+      "x-scheme-handler/http"
+      "x-scheme-handler/https"
+      "x-scheme-handler/about"
+      "x-scheme-handler/unknown"
     ];
     discord = [ "x-scheme-handler/discord" ];
   };

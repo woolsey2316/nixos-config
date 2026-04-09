@@ -8,8 +8,11 @@
     ./browser.nix                     # firefox based browser
     ./btop.nix                        # resouces monitor 
     ./cava.nix                        # audio visualizer
+    ./chromium.nix                    # chrome browser
+    ./copilot.nix                     # copilot-cli
     ./discord.nix                     # discord
     ./fastfetch/fastfetch.nix         # fetch tool
+    ./firefox.nix                     # firefox developer edition
     ./fzf.nix                         # fuzzy finder
     ./gaming.nix                      # packages related to gaming
     ./ghostty/ghostty.nix             # terminal
@@ -17,6 +20,7 @@
     ./gnome.nix                       # gnome apps
     ./gtk.nix                         # gtk theme
     ./hyprland                        # window manager
+    ./keepass.nix                     # password manager
     ./kitty.nix                       # terminal
     ./lazygit.nix
     ./micro.nix                       # nano replacement

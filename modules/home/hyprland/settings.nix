@@ -2,10 +2,14 @@
 {
   wayland.windowManager.hyprland.settings = {
     "$mod" = "SUPER";
+    
+    cursor = {
+      no_hardware_cursors = true;
+    };
 
     input = {
       kb_layout = "us,fr";
-      kb_options = "grp:alt_caps_toggle";
+      kb_options = "grp:alt_caps_toggle,caps:swapescape";
 
       repeat_delay = 300;
       numlock_by_default = true;
