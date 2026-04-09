@@ -51,7 +51,7 @@ in
           today = "<span color='#98971A'><b>{}</b></span>";
         };
       };
-      format = "{:%H:%M}";
+      format = "{:%I:%M %p}";
       tooltip = "true";
       tooltip-format = "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>";
       format-alt = "{:%d/%m}";

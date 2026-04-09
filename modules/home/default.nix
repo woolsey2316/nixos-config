@@ -11,7 +11,6 @@
     ./chromium.nix                    # chrome browser
     ./copilot.nix                     # copilot-cli
     ./discord.nix                     # discord
-    ./docker.nix                      # docker
     ./fastfetch/fastfetch.nix         # fetch tool
     ./firefox.nix                     # firefox developer edition
     ./fzf.nix                         # fuzzy finder
@@ -24,8 +23,11 @@
     ./keepass.nix                     # password manager
     ./kitty.nix                       # terminal
     ./lazygit.nix
+    ./mongodb.nix                     # mongoDB
+    ./mongodb-compass.nix             # mongoDB compass
     ./micro.nix                       # nano replacement
     ./nemo.nix                        # file manager
+    ./node.nix                        # nodeJS, pnpm
     ./nvim.nix                        # neovim editor
     ./obsidian.nix
     ./p10k/p10k.nix
