@@ -28,6 +28,7 @@
     ./micro.nix                       # nano replacement
     ./nemo.nix                        # file manager
     ./node.nix                        # nodeJS, pnpm
+    ./notepadnext.nix                 # notepad++ alternative                 
     ./nvim.nix                        # neovim editor
     ./obsidian.nix
     ./p10k/p10k.nix
@@ -40,6 +41,7 @@
     ./spicetify.nix                   # spotify client
     ./superfile/superfile.nix         # terminal file manager
     ./swaylock.nix                    # lock screen
+    ./swayidle.nix                    # suspend after 5 min idle
     ./swayosd.nix                     # brightness / volume wiget
     ./swaync/swaync.nix               # notification deamon
     ./thunderbird.nix                 # email client
