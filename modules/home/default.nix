@@ -39,7 +39,6 @@
     ./../../scripts/scripts.nix       # personal scripts
     ./ssh.nix                         # ssh config
     ./spicetify.nix                   # spotify client
-    ./steam.nix                       # steam (gaming)
     ./superfile/superfile.nix         # terminal file manager
     ./swaylock.nix                    # lock screen
     ./swayidle.nix                    # suspend after 5 min idle
