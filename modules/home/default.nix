@@ -5,6 +5,7 @@
     ./audacious/audacious.nix         # music player
     ./bat.nix                         # better cat command
     ./blueman.nix                     # bluetooth manager
+    ./bolt-launcher.nix               # bolt-launcher 
     ./browser.nix                     # firefox based browser
     ./btop.nix                        # resouces monitor 
     ./cava.nix                        # audio visualizer
