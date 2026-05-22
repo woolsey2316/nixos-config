@@ -35,6 +35,7 @@
     ./p10k/p10k.nix
     ./packages                        # other packages
     ./pomo/pomo.nix                   # TUI Pomodoro timer
+    ./pgadmin.nix                     # PGAdmin 4
     ./retroarch.nix  
     ./rofi/rofi.nix                   # launcher
     ./../../scripts/scripts.nix       # personal scripts
