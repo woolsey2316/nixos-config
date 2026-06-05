@@ -1,18 +1,16 @@
-{ ... }:
+{ config, lib, pkgs, ... }:
+
 {
   programs.ssh = {
     enable = true;
-
     enableDefaultConfig = false;
 
     matchBlocks = {
       "*" = {
         addKeysToAgent = "1h";
-
         controlMaster = "auto";
         controlPath = "~/.ssh/control-%r@%h:%p";
         controlPersist = "10m";
-
         forwardAgent = false;
         compression = false;
         serverAliveInterval = 0;
@@ -30,6 +28,19 @@
         identitiesOnly = true;
       };
     };
+  };
+
+  # Fix OpenSSH rejecting the Nix store symlink
+  home.file.".ssh/config".force = true;
+  home.activation = {
+    fixSshPermissions = lib.hm.dag.entryAfter [ "linkGeneration" ] ''
+      if [ -L "$HOME/.ssh/config" ]; then
+        src="$(readlink -f "$HOME/.ssh/config")"
+        run rm "$HOME/.ssh/config"
+        run cp "$src" "$HOME/.ssh/config"
+        run chmod 600 "$HOME/.ssh/config"
+      fi
+    '';
   };
 
   services.ssh-agent.enable = true;

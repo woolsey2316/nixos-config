@@ -1,7 +1,7 @@
 { ... }:
 {
   imports = [
-    ./android-tools.nix
+    ./android-sdk.nix                 # android sdk with studio
     ./aseprite/aseprite.nix           # pixel art editor
     ./audacious/audacious.nix         # music player
     ./bat.nix                         # better cat command
