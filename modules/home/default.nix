@@ -18,9 +18,9 @@
     ./gaming.nix                      # packages related to gaming
     ./ghostty/ghostty.nix             # terminal
     ./git.nix                         # version control
+    ./glib.nix                        # for viewing mobile applications with react expo
     ./gnome.nix                       # gnome apps
     ./gtk.nix                         # gtk theme
-    ./home.nix                        # home.nix for postgresql, I created this
     ./hyprland                        # window manager
     ./keepass.nix                     # password manager
     ./kitty.nix                       # terminal
@@ -36,7 +36,6 @@
     ./p10k/p10k.nix
     ./packages                        # other packages
     ./pomo/pomo.nix                   # TUI Pomodoro timer
-    ./postgresql.nix                  # Postgresql
     ./pgadmin.nix                     # PGAdmin 4
     ./retroarch.nix  
     ./rofi/rofi.nix                   # launcher

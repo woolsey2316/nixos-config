@@ -26,6 +26,10 @@
       HandleLidSwitchDocked = "ignore";
     };
 
+    postgresql = {
+       enable = true;
+    };
+
     udisks2.enable = true;
   };
 }
