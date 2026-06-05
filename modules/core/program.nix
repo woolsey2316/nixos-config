@@ -12,6 +12,8 @@
 
     appimage.enable = true;
 
+    adb.enable = true;
+
     # for Expo, React native apps
     nix-ld.enable = true;
     nix-ld.libraries = with pkgs; [
