@@ -29,7 +29,7 @@
       };
     };
   };
-
+  # OpenSSH strictly rejects configuration files that are symlinks pointing into the Nix store (/nix/store/...) because it perceives the Nix store's directory permissions as unsecure and outside of your exclusive user ownership.
   # Fix OpenSSH rejecting the Nix store symlink
   home.file.".ssh/config".force = true;
   home.activation = {

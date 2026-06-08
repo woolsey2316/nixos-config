@@ -2,6 +2,7 @@
 {
   imports = [
     ./android-sdk.nix                 # android sdk with studio
+    ./anki.nix                        # anki app
     ./aseprite/aseprite.nix           # pixel art editor
     ./audacious/audacious.nix         # music player
     ./bat.nix                         # better cat command
@@ -38,6 +39,7 @@
     ./packages                        # other packages
     ./pomo/pomo.nix                   # TUI Pomodoro timer
     ./pgadmin.nix                     # PGAdmin 4
+    ./python.nix                      # Python and pip
     ./retroarch.nix  
     ./rofi/rofi.nix                   # launcher
     ./../../scripts/scripts.nix       # personal scripts
