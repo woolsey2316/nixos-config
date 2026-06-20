@@ -23,7 +23,8 @@
       ];
     };
   };
-
+  # Fuse for cursor IDE
+  programs.fuse.enable = true;
   environment.systemPackages = with pkgs; [
     wget
     git

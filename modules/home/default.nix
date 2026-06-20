@@ -13,6 +13,7 @@
     ./cava.nix                        # audio visualizer
     ./chromium.nix                    # chrome browser
     ./copilot.nix                     # copilot-cli
+    ./cursor.nix                      # cursor IDE
     ./discord.nix                     # discord
     ./fastfetch/fastfetch.nix         # fetch tool
     ./firefox.nix                     # firefox developer edition
@@ -39,7 +40,6 @@
     ./packages                        # other packages
     ./pomo/pomo.nix                   # TUI Pomodoro timer
     ./pgadmin.nix                     # PGAdmin 4
-    ./python.nix                      # Python and pip
     ./retroarch.nix  
     ./rofi/rofi.nix                   # launcher
     ./../../scripts/scripts.nix       # personal scripts
