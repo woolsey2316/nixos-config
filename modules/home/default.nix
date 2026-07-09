@@ -25,6 +25,7 @@
     ./gnome.nix                       # gnome apps
     ./gtk.nix                         # gtk theme
     ./hyprland                        # window manager
+    ./inkscape.nix                    # inkscape
     ./keepass.nix                     # password manager
     ./kitty.nix                       # terminal
     ./lazygit.nix
