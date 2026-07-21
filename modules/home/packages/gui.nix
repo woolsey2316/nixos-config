@@ -21,7 +21,6 @@
     popsicle
     mission-center # GUI resources monitor
     zenity
-    upwork
 
     ## Level editor
     ldtk

@@ -3,8 +3,11 @@
   imports = [ inputs.nix-flatpak.nixosModules.nix-flatpak ];
 
   services.flatpak = {
-    enable = false;
-    packages = [ "com.github.tchx84.Flatseal" ];
+    enable = true;
+    packages = [
+      "com.github.tchx84.Flatseal"
+      "com.upwork.Upwork"
+    ];
     overrides = {
       global = {
         # Force Wayland by default
