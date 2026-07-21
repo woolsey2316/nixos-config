@@ -7,6 +7,7 @@
     packages = [
       "com.github.tchx84.Flatseal"
       "com.upwork.Upwork"
+      "com.mongodb.Compass"
     ];
     overrides = {
       global = {
