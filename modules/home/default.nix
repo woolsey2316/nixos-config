@@ -16,6 +16,7 @@
     ./cursor.nix                      # cursor IDE
     ./discord.nix                     # discord
     ./fastfetch/fastfetch.nix         # fetch tool
+    ./flameshot.nix                   # screenshot tool
     ./firefox.nix                     # firefox developer edition
     ./fzf.nix                         # fuzzy finder
     ./gaming.nix                      # packages related to gaming
