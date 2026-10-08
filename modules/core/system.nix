@@ -26,6 +26,8 @@
   # Fuse for cursor IDE
   programs.fuse.enable = true;
   environment.systemPackages = with pkgs; [
+    yarn
+    nodejs
     wget
     git
   ];
