@@ -30,6 +30,11 @@
        enable = true;
     };
 
+    mongodb = {
+      enable = true;
+      package = pkgs.mongodb-ce;
+    };
+
     udisks2.enable = true;
   };
 }
