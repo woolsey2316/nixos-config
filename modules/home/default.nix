@@ -54,6 +54,7 @@
     ./swaync/swaync.nix               # notification deamon
     ./thunderbird.nix                 # email client
     ./unrar.nix                       # unrar file extractor
+    ./upwork.nix                      # upwork desktop (official deb)
     ./vscodium                        # vscode fork
     ./waybar                          # status bar
     ./waypaper.nix                    # GUI wallpaper picker
