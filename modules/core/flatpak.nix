@@ -11,14 +11,12 @@
     ];
     overrides = {
       global = {
-        # Force Wayland by default
-        Context.sockets = [
-          "wayland"
-          "!x11"
-          "!fallback-x11"
-        ];
+        # Prefer Wayland when available. Do not deny x11 here — Flatpak's
+        # global !x11 cannot be re-enabled per-app, and CEF apps (Bolt) crash
+        # without XWayland (Missing X server / $DISPLAY).
+        Context.sockets = [ "wayland" ];
       };
-      # RS clients / Wine need X11
+      # Bolt's CEF UI + Wine/RS clients need X11/XWayland
       "com.adamcake.Bolt".Context.sockets = [
         "wayland"
         "x11"
