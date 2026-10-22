@@ -42,6 +42,7 @@
     ./packages                        # other packages
     ./pomo/pomo.nix                   # TUI Pomodoro timer
     ./pgadmin.nix                     # PGAdmin 4
+    ./psmisc.nix                      # kill processes
     ./retroarch.nix  
     ./rofi/rofi.nix                   # launcher
     ./../../scripts/scripts.nix       # personal scripts

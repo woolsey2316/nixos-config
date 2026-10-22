@@ -7,6 +7,7 @@
     packages = [
       "com.github.tchx84.Flatseal"
       "com.mongodb.Compass"
+      "com.adamcake.Bolt"
     ];
     overrides = {
       global = {
@@ -17,6 +18,12 @@
           "!fallback-x11"
         ];
       };
+      # RS clients / Wine need X11
+      "com.adamcake.Bolt".Context.sockets = [
+        "wayland"
+        "x11"
+        "fallback-x11"
+      ];
     };
   };
 }

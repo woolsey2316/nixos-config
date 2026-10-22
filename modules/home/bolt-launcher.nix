@@ -1,8 +1,4 @@
-{ pkgs, ... }:
-
+{ ... }:
 {
-  home.packages = [
-    # Override bolt-launcher to enable RS3
-    (pkgs.bolt-launcher.override { enableRS3 = true; })
-  ];
+  # Bolt Launcher via Flatpak (com.adamcake.Bolt) in modules/core/flatpak.nix
 }
