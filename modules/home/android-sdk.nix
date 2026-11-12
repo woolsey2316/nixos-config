@@ -22,8 +22,7 @@ let
   };
 in
 {
-  nixpkgs.config.allowUnfree = true;
-
+  # allowUnfree is set system-wide (home-manager.useGlobalPkgs)
   home.packages = [
     androidStudioFHS
     pkgs.android-tools 

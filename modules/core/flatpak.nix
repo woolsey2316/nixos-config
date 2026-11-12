@@ -16,11 +16,11 @@
         # without XWayland (Missing X server / $DISPLAY).
         Context.sockets = [ "wayland" ];
       };
-      # Bolt's CEF UI + Wine/RS clients need X11/XWayland
+      # Bolt's CEF needs real X11 (not fallback-x11). If both are set, Flatpak
+      # prefers fallback-x11 and skips X11 whenever Wayland is available.
       "com.adamcake.Bolt".Context.sockets = [
         "wayland"
         "x11"
-        "fallback-x11"
       ];
     };
   };

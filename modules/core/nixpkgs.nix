@@ -11,6 +11,16 @@
           inherit (prev) system;
         })
       )
+      # Pull a newer Cursor from a pinned nixpkgs without bumping the whole system
+      (
+        final: prev: {
+          code-cursor =
+            (import inputs.nixpkgs-cursor {
+              inherit (prev) system;
+              config.allowUnfree = true;
+            }).code-cursor;
+        }
+      )
     ];
   };
 }

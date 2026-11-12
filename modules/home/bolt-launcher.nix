@@ -1,11 +1,25 @@
 { pkgs, ... }:
 {
   # Bolt Launcher via Flatpak (com.adamcake.Bolt) in modules/core/flatpak.nix.
-  # CEF needs X11/XWayland; --socket=x11 is explicit so a global !x11 override
-  # cannot strip it (Flatpak does not let per-app overrides undo global denials).
   home.packages = [
     (pkgs.writeShellScriptBin "bolt" ''
-      exec flatpak run --socket=x11 --socket=fallback-x11 com.adamcake.Bolt "$@"
+      exec flatpak run --socket=x11 --branch=stable --arch=x86_64 --command=bolt com.adamcake.Bolt "$@"
     '')
   ];
+
+  # Override Flatpak's .desktop so the app menu also passes --socket=x11
+  # (same args as `flatpak run --socket=x11 ...`, which works).
+  xdg.desktopEntries."com.adamcake.Bolt" = {
+    name = "Bolt";
+    genericName = "Bolt Launcher";
+    comment = "Third-party Jagex launcher";
+    exec = "bolt";
+    icon = "com.adamcake.Bolt";
+    categories = [ "Game" ];
+    terminal = false;
+    settings = {
+      StartupWMClass = "com.adamcake.Bolt";
+      Keywords = "games;";
+    };
+  };
 }
