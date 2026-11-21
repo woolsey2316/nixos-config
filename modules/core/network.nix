@@ -2,7 +2,12 @@
 {
   networking = {
     hostName = "${host}";
-    networkmanager.enable = true;
+    networkmanager = {
+      enable = true;
+      wifi.powersave = false;
+      wifi.macAddress = "permanent";
+      wifi.scanRandMacAddress = false;
+    };
     nameservers = [
       "8.8.8.8"
       "8.8.4.4"

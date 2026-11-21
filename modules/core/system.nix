@@ -27,6 +27,9 @@
   programs.fuse.enable = true;
   environment.systemPackages = with pkgs; [
     yarn
+    prismlauncher
+    temurin-bin-21  # For Minecraft 1.20.5+
+    vbam
     nodejs
     wget
     git
